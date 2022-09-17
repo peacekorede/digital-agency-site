@@ -12,24 +12,26 @@ body{
     padding: 5px 0;
 }
 
-
-
-
-
 .nav-bar{
     display: flex;
-    justify-content: space-evenly;
-    margin: 0px 0px;
+    justify-content: space-between;
 }
-
-
+.logo{
+    display: flex;
+    align-items: center;
+}
+#logo_img{
+width: 2.3rem;
+}
+#logo_text{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
 .menu{
     display: flex;
-     font-size: 19px;
-   
-
-    
+     font-size: 19px;    
 }
+
 .menu li{
     list-style: none; 
     margin-left: 90px;
@@ -53,10 +55,10 @@ body{
 
 .into{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     font-size: 1rem;
+    margin-bottom: 50px;
 }
 .con{  
     margin-top: 80px;
@@ -84,31 +86,19 @@ body{
 
 
 #img_box{
-  
-    /* width: 100%; */
+max-width: 50%; 
  margin-top: 80px;
+ margin-right: 5rem;
   
 }
 
 #img{
     border-radius: 5%;
+    width: 135%;
+    
 }
 
-/*
-.grow{
-    border: 1px solid white;
-    padding: 0.1rem;
-    border-radius: 10px;
-    background-color: white;
-    padding-right: 0.5rem;
-    padding-left: 0.2rem;
-    width: 210px;
-    font-size: 11px;
-    margin-left: 270px;
-  
-   
-}
-*/
+
 .digi{
     font-size: 10px;
 }
@@ -128,13 +118,15 @@ body{
         padding-right: 15px;
         border-radius: 19px;
         font-size: 10px;
-        max-width: 15rem;
+        max-width: 10rem;
         height: 100px;
         margin-top: 50px;
+        text-align: center;
 }
 
 .icon{
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .con_1{
@@ -162,7 +154,9 @@ body{
    
     body{
         background-color: snow;
-    }
+        margin: 20px 2rem;
+}
+    
     
     .menu{
    display: none;
@@ -171,19 +165,49 @@ body{
 .into{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    
+    
+}
+#heading{
+    font-size: 2rem;
+}
+
+#img_box{
+  
+     margin-top: 80px;
+     margin-left: -1rem;
+     
+      
+    }
+    
+#img{
+    /* border-radius: 5%; */
+    width: 170%;
+    
 }
  
    .messages{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        text-align: center;
+        
         
 }
       .grow{
         display: none;
       }
-    }
 
+
+      .common{
+        max-width: 9rem;
+        height: 120px;
+        margin: 10px auto;
+       
+}
+    
+    }
     @media (min-width: 611px) and (max-width: 780px) {
         
         .menu{
